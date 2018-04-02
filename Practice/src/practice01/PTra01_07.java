@@ -10,7 +10,7 @@ public class PTra01_07 {
 	public static void main(String[] args) {
 
 		// 基本型8種類の変数を宣言します
-		boolean bo;
+		boolean bo; 
 		byte by;
 		short s;
 		char c;
@@ -21,7 +21,17 @@ public class PTra01_07 {
 
 		// ★ それぞれの型変数に、値を代入してください
 		// ※ 値は、好きな数字を入力してください
-
+		 bo = true;
+		 by = 9;
+		 s = 10;
+		 c = 'あ';
+		 i = 100;
+		 l = 11111111L;
+		 f = 2.3F;
+		 d = 1.1;
+		 
+		 
+         
 
 
 
@@ -31,14 +41,14 @@ public class PTra01_07 {
 
 
 		// ★ それぞれの変数の中身を出力してください
-
-
-
-
-
-
-
-
+		 System.out.println(bo);  
+		 System.out.println(by);  
+		 System.out.println(s);  
+		 System.out.println(c);  
+		 System.out.println(i);  
+		 System.out.println(l);  
+		 System.out.println(f);  
+		 System.out.println(d);  
 
 	}
 }
