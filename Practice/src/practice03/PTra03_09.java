@@ -18,5 +18,40 @@ public class PTra03_09 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+
+		System.out.println("0～6までの数字を入力して下さい。");
+		// コマンドプロンプトで入力した文字列が変数lineに代入されます
+				String line = scanner.nextLine();
+
+				// 文字列を数字に変換して、変数numに代入します
+				// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになります
+				int num = Integer.parseInt(line);
+				
+				switch(num) {
+				case 0:
+					System.out.println("日曜日");
+	                break;
+				case 1:
+					System.out.println("月曜日");
+	                break;
+	                case 3:
+						System.out.println("火曜日");
+		                break;
+	                case 4:
+						System.out.println("木曜日");
+		                break;
+	                case 5:
+						System.out.println("金曜日");
+		                break;
+	                case 6:
+						System.out.println("土曜日");
+		                break;
+		                default:
+		                	System.out.println("0～6の整数を入力してください");
+
+		
+				
+				}
 	}
 }
