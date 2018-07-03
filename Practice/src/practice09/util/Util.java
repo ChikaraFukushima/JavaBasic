@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+
 /**
  * 様々なメソッドを集めたJavaプログラムです。
  * util.Utilをインポートして使用してください。
@@ -17,10 +18,14 @@ import java.util.List;
  *
  * @author Rhizome
  *
+ *
  */
+
+
 public class Util {
 	private Util() {
 		/* インスタンス化を禁止するため、private化 */
+		
 	}
 
 	/**
@@ -33,11 +38,12 @@ public class Util {
 		for (int i = 0; i < message.length(); i++) {
 			System.out.print(array[i]);
 			try {
-				Thread.sleep(millisecond);
+				Thread.sleep(millisecond);													
 			} catch (InterruptedException e) {
 				/* エラーが発生した場合はここにくる */
 			}
 		}
+		
 	}
 
 	/**
@@ -48,7 +54,7 @@ public class Util {
 	public static String[] shuffleArray(String[] array) {
 		List<String> list = Arrays.asList(array);
 		Collections.shuffle(list);
-		return (String[]) list.toArray();
+		return (String[]) list.toArray(); 
 	}
 
 }
