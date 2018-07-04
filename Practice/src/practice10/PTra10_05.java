@@ -49,23 +49,21 @@ public class PTra10_05 {
 		 */
 		 int a = 0;//進んだ距離
 		 int n = 0;//runメソッドを実行した回数。
-	
-		  while(distance>a) {      //条件式多い→シンプルに減らす（アドバイス)→現状何故実行されるか不明
-		  a = car.run();       //編集済み06に元の状態ありi=bになっている
-		  if(a>0) {
-			 a=a+a;
-			 n++;
-		  }else{
+
+		  while(distance>a) {
+		  int i = car.run();
+		  if(i ==-1) {
 			  System.out.println("目的地に到達できませんでした");
-			  break;
-		   }
-		 if(a>distance) {
-			  int x = car.gasoline;	//xは残りのガソリンの数です。	 
-			  System.out.println("目的地にまで"+n+"時間かかりました。残りのガソリンは、"+x+"リットルです");
-			  break;
+	          break;
+		  }else{
+			  a=a+i;
+			  n++;
+			  }
+		  }
+		  if(a>distance) {
+		  System.out.println("目的地にまで"+n+"時間かかりました。残りのガソリンは、"+car.gasoline+"リットルです");
 		  }else {
-			  break; 
 		  }
 	}
 }
-}
+
