@@ -24,8 +24,9 @@ public class PTra11_03 {
 	public static void main(String[] args) {
 
 		// ★ sumメソッドを呼び出してください
-		new PTra11_03().sum(1,2);     
-	}
+		PTra11_03 a = new PTra11_03();
+		a.sum(1,2);     
+	}   //sum()がスタティック(static=静的メンバ)でない為、クラス名.メソッドで呼び出せず一度インスタンスを作って呼び出している。
 
 	public void sum(int x, int y) {
 		System.out.println("sumメソッドを呼び出しました。" + x + "＋" + y + "＝" + (x + y));
